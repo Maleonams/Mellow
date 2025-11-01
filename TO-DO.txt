@@ -1,0 +1,49 @@
+##################
+### TO-DO LIST ###
+##################
+
+- Hyprland:
+    -decorations: /
+    -environments: ✓
+    -execs: /
+    -general: ✓
+    -inputs: ✓
+    -keybinds: /
+    -misc: ✓
+    -wallpapers: ⨉
+
+-Quickshell: ⨉
+    -status bar: ⨉
+    -task bar (?): ⨉
+    -widgets: ⨉
+    -custom settings: ⨉
+
+App launcher (Rofi / Wofi): /
+    -making it work: /
+    -style: ⨉
+
+Terminal: ⨉
+    -styling kitty: /
+    -styling fish: ⨉
+    -greeter: ⨉
+
+Wallpapers: /
+    -making it work: /
+    -transitions: ⨉
+
+Theme: ⨉
+    -main/ first: /
+    -transitions: ⨉
+
+
+
+Legend:
+
+⨉ : not started/ haven't touched yet
+/ : in progress
+✓ : done but can be changed
+
+A main part is:
+-finished when everything is done: ✓
+-In progress if half of it is finished or 90% is in progress: /
+-Not done when 90% is not touched or done or hasn't a branch: ⨉
