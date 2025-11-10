@@ -1,0 +1,10 @@
+### ALL PACKAGES FROM THE AUR THAT I'VE FOUND ON MY PC ###
+
+# USE YAY pls ? :3
+
+- Fastfetch
+- Pipewire
+- Hyprland
+- Quickshell
+- kitty
+- waybar?
