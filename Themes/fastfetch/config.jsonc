@@ -1,0 +1,131 @@
+// 888'Y88                 d8    dP,e,           d8            888
+// 888 ,'Y  ,"Y88b  dP"Y  d88    8b "   ,e e,   d88    e88'888 888 ee
+// 888C8   "8" 888 C88b  d88888 888888 d88 88b d88888 d888  '8 888 88b
+// 888 "   ,ee 888  Y88D  888    888   888   ,  888   Y888   , 888 888
+// 888     "88 888 d,dP   888    888    "YeeP"  888    "88,e8' 888 888
+
+
+//     e   e             888 888
+//    d8b d8b     ,e e,  888 888  e88 88e  Y8b Y8b Y888P
+//   e Y8b Y8b   d88 88b 888 888 d888 888b  Y8b Y8b Y8P
+//  d8b Y8b Y8b  888   , 888 888 Y888 888P   Y8b Y8b "
+// d888b Y8b Y8b  "YeeP" 888 888  "88 88"     YP  Y8P
+
+{
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+"logo": {
+    "source":"~/.config/fastfetch/blackhole.txt",
+    "type":"file",
+    "height": 12,
+    "padding": {
+        "top": 6,
+        "bottom": 1
+    }
+},
+"modules": [
+        "break",
+        "break",
+        {
+            "type": "custom",
+            "format": "┌─                      Hardware                      ─┐"
+        },
+        {
+            "type": "title",
+            "key": "* PC"
+        },
+        {
+            "type": "cpu",
+            "key": "┌ ┌ CPU"
+        },
+        {
+            "type": "gpu",
+            "key": "│ │ GPU"
+        },        
+        {
+            "type": "memory",
+            "key": "│ │ Memory"
+        },        
+        {
+            "type": "swap",
+            "key": "└ └ Swap"
+        },
+        {
+            "type": "custom",
+            "format": "└─                                                    ─┘"
+        },
+                
+        {
+            "type": "custom",
+            "format": "┌─                      Software                      ─┐",
+            "outputColor": "red"        
+        },
+        {
+            "type": "os",
+            "key": "* OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "┌ ┌ Kernel",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "│ │ Packages",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "│ │ Shell",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "command",
+            "key": "│ │ OS Age",
+            "keyColor": "yellow",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "└ └ Uptime",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type": "de",
+            "key": "* DE",
+            "keyColor": "light_red"
+        },
+        {
+            "type": "lm",
+            "key": "┌ ┌ LM",
+            "keyColor": "light_red"
+        },
+        {
+            "type": "wm",
+            "key": "│ │ WM",
+            "keyColor": "light_red"
+        },
+        {
+            "type": "gpu",
+            "key": "│ │ GPU Driver",
+            "format": "{3}",
+            "keyColor": "light_red"
+        },
+        {
+            "type": "wmtheme",
+            "key": "└ └ Theme",
+            "keyColor": "light_red"
+        },
+        {
+            "type": "custom",
+            "format": "└─                                                    ─┘",
+            "outputColor": "red"
+        },
+        {
+            "type": "custom",
+            "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+        },
+        "break"
+    ]
+}
