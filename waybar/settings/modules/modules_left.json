@@ -1,0 +1,24 @@
+{
+    "custom/kitty": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "kitty"
+  },
+  "clock": {
+    "orientation": "vertical",
+    "interval": 1,
+    "tooltip": true,
+    "format":"{:%H
+%M
+%S}",
+    "format-alt": "{:%d
+%m
+%y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#ffe3a9'><b>{}</b></span>"
+      }
+    }
+    },
+}

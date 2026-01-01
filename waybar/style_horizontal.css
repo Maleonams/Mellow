@@ -1,0 +1,51 @@
+/* ignore GTK theme */
+* {
+	all: initial;
+}
+
+@import "./settings/themes/mellow-space-theme.css";
+@import "./settings/global.css";
+
+* {
+	border: none;
+	border-radius: 10px;
+    font-family: "MapleMono-Regular", "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    min-width: 6px;
+    min-height: 24px; 
+    font-size: 16px;
+    margin: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: none;
+}
+#pulseaudio-slider {
+    padding: 2px;
+    margin: 2px;
+}
+#pulseaudio-slider slider {
+    min-height: 28px;
+    min-width: 28px;
+    background-image: none;
+    border-radius: 2px;
+    margin: 1px;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 18px;
+    min-width: 120px;
+    border-radius: 5px;
+    background: @color0;
+}
+#pulseaudio-slider highlight {
+    border-radius: 5px;
+    background: @color12;
+}
+#menu {
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#menuitem {
+    border-radius: 10px;
+    font-size: 12px;
+}

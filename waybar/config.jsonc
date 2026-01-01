@@ -1,0 +1,30 @@
+{
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "reload_style_on_change": true,
+    "include": [
+      "./settings/modules/modules_center.json",
+      "./settings/modules/modules_left.json",
+      "./settings/modules/modules_right.json"
+      ],
+    /* for das laterrrr */
+    "layer": "top",
+    "position": "left", 
+  "modules-left": [
+    "custom/kitty",
+    "clock"
+  ],
+  "modules-center": [
+    "group/player",
+    "hyprland/workspaces",
+    "custom/distro"
+  ],
+  "modules-right": [
+    "group/apps",
+    "group/pulse",
+    "group/parameter",
+    "battery",
+    "group/power"
+  ]
+}

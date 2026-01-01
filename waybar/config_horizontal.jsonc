@@ -1,0 +1,124 @@
+{
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height": 36,
+    /* for das laterrrr */
+    "layer": "top",
+    "position": "top", 
+    "include": [ "./themes/mellow-space-themes.css" ],
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ], 
+  "modules-right": [
+    "group/pulse",
+    "pulseaudio/slider",
+    "group/power",
+    "clock"
+  ],
+  "hyprland/window": {
+    "orientation": "inherit",
+    "format": "{}",
+    "max-length": 100,
+    "on-click": "wofi --show drun",
+    "rewrite": {
+      "": "Nothing"
+    },
+    "separate-outputs": true
+  },
+  "hyprland/workspaces": {
+    "orientation": "inherit",
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": "*"
+    },
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "*": 6, // 5 workspaces by default on some monitorero
+      "DP-4": 4
+    }
+  },
+  "group/pulse": {
+    "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-sound",
+        "transition-left-to-right": false
+    },
+    "modules": [
+      "pulseaudio",
+      "custom/pulse-mute"
+    ]
+  },
+  "pulseaudio": {
+    "orientation": "inherit",
+    "format": "{volume}%",
+    "format-bluetooth": "{volume}%   {format_source}",
+    "format-bluetooth-muted": "*muted*   {format_source}",
+    "on-click": "pavucontrol"
+  },
+  "custom/pulse-mute": {
+    "orientation": "inherit",
+    "format": "󰝟",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  "pulseaudio/slider": {
+    "orientation": "inherit",
+    "min": 0,
+    "max": 100
+  }, 
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false
+    },
+    "modules": [
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/lock",
+        "custom/reboot"
+    ]
+  },
+  "custom/quit": {
+    "orientation": "inherit",
+    "format": "󰗼",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+  },
+  "custom/lock": {
+    "orientation": "inherit",
+    "format": "󰍁",
+    "tooltip": false,
+    "on-click": "swaylock"
+  },
+  "custom/reboot": {
+      "orientation": "inherit",
+      "format": "󰜉",
+      "tooltip": false,
+      "on-click": "reboot"
+  },
+  "custom/power": {
+    "orientation": "inherit",
+    "format": "",
+    "tooltip": false,
+    "on-click": "shutdown now"
+  },
+  "clock": {
+    "orientation": "inherit",
+    "interval": 1,
+    "tooltip": true,
+    "format": "{:%H:%M:%S}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#ffe3a9'><b>{}</b></span>"
+      }
+    }
+  }
+}

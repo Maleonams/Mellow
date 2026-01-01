@@ -1,0 +1,7 @@
+/* ignore GTK theme */
+* {
+	all: initial;
+}
+
+@import "./settings/themes/mellow-space-theme.css";
+@import "./settings/global.css";

@@ -1,0 +1,71 @@
+{  
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+        "default": "󰄰",
+        "active": "󰄯"
+        }
+    },
+    "mpris": {
+	    "format": "<span size='14pt'>{player_icon}</span>",
+	    "format-paused": "<span size='14pt'>{status_icon}</span>",
+        "interval": 0,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-click-middle": "playerctl previous",
+        "tooltip": true,
+        "tooltip-format": "{dynamic}",
+	    "player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	    },
+	    "status-icons": {
+		    "paused": "⏸"
+	    }
+    },
+    "custom/loop": {
+        "format": "🗘",
+        "on-click": "playerctl loop track",
+        "tooltip":true,
+        "tooltip-format": "loop"
+    },
+    "custom/shuffle": {
+        "format": "",
+        "on-click": "playerctl shuffle toggle",
+        "tooltip":true,
+        "tooltip-format": "shuffle"
+    },
+    "custom/previous": {
+        "format": "◀",
+        "on-click": "playerctl previous",
+        "tooltip": true,
+        "tooltip-format": "previous"
+    },
+    "custom/next": {
+        "format": "▶",
+        "on-click": "playerctl next",
+        "tooltip":true,
+        "tooltip-format": "next"
+    },
+    "group/player": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "audio",
+            "transition-left-to-right": false
+    },
+    "modules": [
+        "mpris",
+        "custom/loop",
+        "custom/shuffle",
+        "custom/previous",
+        "custom/next"
+    ]
+    },
+    "custom/distro": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "wofi --show drun"
+  }
+}
