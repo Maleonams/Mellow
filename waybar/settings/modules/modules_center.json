@@ -5,6 +5,9 @@
         "format-icons": {
         "default": "󰄰",
         "active": "󰄯"
+        },
+        "persistent-workspaces": {
+            "*": 3
         }
     },
     "mpris": {
@@ -17,11 +20,11 @@
         "tooltip": true,
         "tooltip-format": "{dynamic}",
 	    "player-icons": {
-		"default": "▶",
+		"default": "⏸",
 		"mpv": "🎵"
 	    },
 	    "status-icons": {
-		    "paused": "⏸"
+		    "paused": "▶"
 	    }
     },
     "custom/loop": {
@@ -64,7 +67,7 @@
     ]
     },
     "custom/distro": {
-        "format": "󰣇",
+        "format": "<span size='14pt'>󰣇</span>",
         "tooltip": false,
         "on-click": "wofi --show drun"
   }

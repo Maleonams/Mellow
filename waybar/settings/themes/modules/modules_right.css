@@ -1,0 +1,68 @@
+@import "../mellow-space-theme.css";
+
+#custom-power {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: @btp;
+}
+#power {
+    background: @bt;
+}
+#power-profiles-daemon {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#power-profiles-daemon.performance {
+    background: @btp;
+}
+#power-profiles-daemon.power-saver {
+    background: @aud;
+}
+#power-profiles-daemon.balanced {
+    background: @dst;
+}
+#parameter {
+    background: @bt;
+}
+#custom-brightness {
+    background: @bri;
+    font-size: 14px;
+    padding: 2px;
+}
+#pulse {
+    background: @bt;
+    border-radius: 4px;
+    padding-bottom: 2px;
+}
+#apps {
+    background: @bt; 
+}
+#pulseaudio {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    font-size: 15px;    
+}
+#pulseaudio-slider {
+    padding: 0;
+    margin: 0;
+}
+#pulseaudio-slider slider {
+    min-height: 16px;
+    min-width: 16px;
+    background-image: none;
+    border-radius: 2px;
+    box-shadow: none;
+    background: @bsl;
+    border: none;
+}
+#pulseaudio-slider trough {
+    min-height: 120px;
+    min-width: 16px;
+    border-radius: 5px;
+}
+#pulseaudio-slider highlight {
+    min-height: 10px;
+    min-width: 16px;
+    background: @sli;
+}

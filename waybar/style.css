@@ -1,6 +1,8 @@
 /* ignore GTK theme */
 * {
 	all: initial;
+	font-family: inherit;
+	font-size: 16px
 }
 
 @import "./settings/themes/mellow-space-theme.css";

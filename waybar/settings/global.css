@@ -1,69 +1,24 @@
 @import "./themes/mellow-space-theme.css";
+@import "./themes/modules/modules_left.css";
+@import "./themes/modules/modules_center.css";
+@import "./themes/modules/modules_right.css";
 
+window#waybar {
+    border-radius: 10px;
+    background: @bg;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0;
+}
 * {
-	border: none;
-	border-radius: 10px;
-    font-family: "MapleMono-Regular", "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-    min-width: 2px;
-    min-height: 24px; 
-    font-size: 16px;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
-    transition: none;
-    color: @color14;
-    background: @color8;
-}
-*:hover {
-    color: @color5;
-}
-#pulseaudio-slider {
-    padding: 2px;
+    font-family: inherit;
+    color: @fnt;
+    border-radius: 8px;
     margin: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
 }
-#pulseaudio-slider slider {
-    min-height: 14px;
-    min-width: 14px;
-    border-radius: 2px;
-    margin: 1px;
-    box-shadow: none;
-    background: @color9;
-}
-#pulseaudio-slider trough {
-    min-height: 120px;
-    min-width: 18px;
-    border-radius: 5px;
-    background: @color0;
-}
-#pulseaudio-slider highlight {
-    min-height: 0px;
-    border-radius: 5px;
-    background: @color12;
-}
-#power {
-    margin-right: 2px;
-    margin-left: 0px;
-}
-#custom-power {
-    margin-right: 2px;
-    margin-left: 0px;   
-}
-#network {
-    margin-right: 4px;
-    margin-left: 0px;   
-}
-#custom-shuffle,
-#custom-kitty {
-    margin-right: 6px;
-    margin-left: 0px; 
-}
-#custom-distro,
-#workspaces {
-    margin-right: 6px;
-    margin-left: 0px;
+tooltip {
+    background: @bg;
 }

@@ -1,0 +1,12 @@
+@import "../mellow-space-theme.css";
+
+#custom-kitty {
+    background: @bt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#clock {
+    background: @bt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,6 +1,6 @@
 {
     "custom/kitty": {
-    "format": "",
+    "format": "<span size='16pt'></span>",
     "tooltip": false,
     "on-click": "kitty"
   },
@@ -17,7 +17,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
       "format": {
-        "today": "<span color='#ffe3a9'><b>{}</b></span>"
+        "today": "<span color='#9e2a3a'><b>{}</b></span>"
       }
     }
     },
