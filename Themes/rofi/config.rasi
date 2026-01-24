@@ -1,0 +1,68 @@
+@theme "default"
+
+configuration {
+    modes: [ combi ];
+    combi-modes: [ drun ];
+    show-icons: true;
+}
+* {
+    background-color: #2d2540;
+    text-color: #ffe3a9;
+}
+window {
+    background-color: #2d2540;
+    border-radius: 12px;
+    border: 0;
+}
+mainbox {
+    background-color: #2d2540;
+    padding: 20px;
+}
+listview {
+    background-color: #2d2540;
+    columns: 4;
+    lines: 3;
+    spacing: 12px;
+    fixed-height: true;
+}
+element {
+    background-color: #2d2540;
+    text-color: #ffe3a9;
+    orientation: vertical;
+    border-radius: 10px;
+    padding: 10px;
+}
+element normal.normal {
+    background-color: #2d2540;
+}
+element alternate.normal {
+    background-color: #2d2540;
+}
+element selected.normal {
+    background-color: #5f4d8c;
+}
+element-icon selected.normal {
+    background-color: #5f4d8c;
+}
+element-text selected.normal {
+    background-color: #5f4d8c;
+}
+element-icon {
+    size: 3em;
+    horizontal-align: 0.5;
+    background-color: #2d2540;
+}
+element-text {
+    vertical-align: 1.0;
+    horizontal-align: 0.5;
+    padding-top: 6px;
+    background-color: #2d2540;
+    text-color: #ffe3a9;
+}
+entry {
+    background-color: #1a1325;
+    text-color: #ffe3a9;
+    placeholder: "Search...";
+    padding: 10px;
+    border-radius: 10px;
+}

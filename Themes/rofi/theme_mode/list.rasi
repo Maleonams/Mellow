@@ -1,0 +1,37 @@
+configuration {
+    modes: [combi];
+    combi-modes: [drun, run];
+    show-icons: false;
+}
+
+@theme "list"
+
+* {
+    background-color: #2d2540;
+    text-color: #ffe3a9;
+}
+listview {
+    spacing: 12px;
+    fixed-height: true;
+}
+element {
+    text-color: #ffe3a9;
+    orientation: vertical;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 1em;
+}
+element-text selected.normal {
+   background-color: #1a1325;
+}
+element selected.normal {
+    background-color: #1a1325;
+}
+window {
+    border-radius: 25px;
+    border: 0;
+}
+mainbox {
+    padding: 10px;
+}
