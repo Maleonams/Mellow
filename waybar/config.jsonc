@@ -1,7 +1,8 @@
 {
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-top": 40,
+    "margin-left": 0,
+    "margin-right": 0,
+    "margin-bottom": 40,
     "reload_style_on_change": true,
     "include": [
       "./settings/modules/modules_center.json",

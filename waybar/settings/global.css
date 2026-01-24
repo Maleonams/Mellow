@@ -5,6 +5,8 @@
 
 window#waybar {
     border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     background: @bg;
     padding-left: 4px;
     padding-right: 4px;

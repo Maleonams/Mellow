@@ -32,7 +32,7 @@ def worker():
             elapsed = time.time() - last_change
             value = brightness
         # applique SEULEMENT si stable depuis 200 ms
-        if elapsed > 2:
+        if elapsed > 1:
             subprocess.Popen(
                 ["ddcutil", "-b", BUS, "setvcp", "10", str(value)],
                 stdout=subprocess.DEVNULL,
